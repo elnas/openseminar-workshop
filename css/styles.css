@@ -1,0 +1,272 @@
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f5f5f5;
+    background-image: url(../images/sardinia-free.jpg);
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the .body class covers the full viewport height */
+    background-attachment: fixed;  /* Keeps the background image fixed */
+
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the nav horizontally */
+    align-items: center; /* Center the nav vertically */
+    height: 100px; /* Set the height of the header (adjust as needed) */
+    background-color: #333;
+    color: white;
+}
+
+header .logo {
+    height: 110px;
+    width: 220px;
+}
+
+.header-nav {
+    display: flex; /* Use flexbox for the nav links */
+    justify-content: center; /* Center the links within the nav */
+}
+
+.header-nav a {
+    margin: 0 15px; /* Add spacing between each link */
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size */
+}
+
+.header-nav a:hover {
+    color: #8d8a8a; /* Change color on hover (optional) */
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+    height: auto; /* Ensures the section expands with content */
+}
+
+main p{
+    padding: 40px;
+    text-align: left;
+}
+
+
+
+.intro {
+    background-color: #e0e0e0;
+    padding: 50px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.6; /* Adjusts the height of the text lines */
+}
+
+
+.custom-divider {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #f0f0f0, #333, #f0f0f0); /* Gradient effect */
+    margin: 20px 0;
+}
+
+
+.cta-buttons .btn {
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 4px;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+}
+
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+
+footer p {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+footer p a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer p a:hover {
+    color: #fff;
+}
+
+
+/* Dropdown Styles */
+.dropdown {
+    display: inline-block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    text-align: center;
+    font-size: 24px;
+    color: #555;
+}
+td {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* Space between images */
+    padding: 20px;
+}
+
+/* Gallery item style */
+.gallery-item {
+    width: 200px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    overflow: hidden; /* Hide any overflow of images */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+/* Ensuring all images fit within the item */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the container */
+    object-position: center; /* Center the image in case of cropping */
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Smooth zoom transition */
+}
+
+/* Zoom effect on hover */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .gallery-item {
+        width: 100%; /* Full width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+.contact-text{
+    text-align: center;
+}
+
+
+.Location{
+text-align: left;
+}
+
+
+.Location a{
+    text-decoration: none;
+}
