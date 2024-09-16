@@ -42,12 +42,26 @@ header .logo {
     margin: 0 15px; /* Add spacing between each link */
     text-decoration: none; /* Remove underline from links */
     color: white;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 18px; /* Adjust font size */
 }
 
 .header-nav a:hover {
     color: #8d8a8a; /* Change color on hover (optional) */
+}
+
+
+.iaassc a {
+    text-decoration: none; /* Remove underline from links */
+
+}
+
+
+.list li {
+    text-align: left;
+
+
+
 }
 
 main {
