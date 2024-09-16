@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", loadFooter);
 // JavaScript function to insert a uniform header across all pages
 function loadHeader() {
     const headerContent = `
-        <a href="index.html"><img src="images/logo.PNG" alt="Department Logo" class="logo"></a>
+        <a href="index.html"><img src="images/logo2.PNG" alt="Department Logo" class="logo"></a>
         <nav class="header-nav">
             <a href="index.html">Home</a>
             <a href="schedule.html">Schedule</a>
