@@ -12,7 +12,7 @@ function loadFooter() {
                 <img src="images/x1.png" alt="Twitter" class="social-icon">
             </a>
         </div>
-        <p>&copy; <a href="http://localhost/openseminar-workshop/">2024 Open-Seminar/Workshop Sassari, Sardinia</a> |  All rights reserved | Powered by <a href="https://www.iaas.uni-stuttgart.de/abteilung-service-computing/" target="_blank">IAAS-SC</a></p>
+        <p>&copy; <a href="index.html">2024 Open-Seminar/Workshop Sassari, Sardinia</a> |  All rights reserved | Powered by <a href="https://www.iaas.uni-stuttgart.de/abteilung-service-computing/" target="_blank">IAAS-SC</a></p>
     `;
 
     // Get all footer elements on the page
